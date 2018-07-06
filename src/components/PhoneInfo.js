@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 class PhoneInfo extends Component {
-
     state = {
         editing : false,
         name : '',
@@ -59,8 +58,20 @@ class PhoneInfo extends Component {
                 {
                     editing ? (
                         <div>
-                            <div><input name ="name" onChange = {this.handleChange} value ={this.state.name}/></div>
-                            <div><input name ="phone" onChange = {this.handleChange} value={this.state.phone}/></div>
+                            <div>
+                                <input 
+                                    name ="name" 
+                                    onChange = {this.handleChange} 
+                                    value ={this.state.name}
+                                />
+                            </div>
+                            <div>
+                                <input 
+                                    name ="phone" 
+                                    onChange = {this.handleChange} 
+                                    value={this.state.phone}
+                                />
+                            </div>
                         </div>
                     ) : (
                         <div>
